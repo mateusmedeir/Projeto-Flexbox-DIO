@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  text-decoration: none;
+}
+div img{
+  display: block;
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  max-width: 992px;
+  margin: auto;
+  width: 100%;
+  min-width: 320px;
+}
+header {
+  background-color: #122A57;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+header .list-items {
+  display: flex;
+  width: 100%;
+  max-width: 260px;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-items li a {
+  color: #fff;
+}
+header .menu {
+  justify-content: space-between;
+}
+.apresentacao {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.apresentacao .texto-apresentacao {
+  min-height: 200px;
+}
+.texto-apresentacao h1 {
+  color: #122A57;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.btn{
+  background-color: #122A57;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 220px;
+  height: 50px;
+  display: block;
+}
+#quem-somos{
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+#quem-somos img{
+  min-width: 320px;
+  margin: auto;
+}
+#quem-somos h2{
+  font-size: 32px;
+  color: #122A57;
+  display:flex;
+  margin-bottom: 20px;
+}
+#quem-somos h2::before{
+  content: "";
+  height: 50px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: #122A57;
+  position: relative;
+}
+#quem-somos p{
+  margin-bottom: 10px;
+  width: 90%;
+}
+#quem-somos img {
+  min-width: 500px;
+}
+.container-externo{
+  background-color:#122A57;
+  width: 100%;
+}
+#servicos{
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+#servicos h2{
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.list-servicos{
+  display: flex;
+  justify-content: space-between;
+}
+.list-servicos .item-servico {
+  text-align: center;
+}
+.item-servico a{
+  width: 220px;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 50px;
+  padding: 13px 35px;
+  font-size: 14px;
+  text-decoration: none;
+  color:#122A57;
+  font-weight: 700;
+}
+.item-servico p{
+  font-weight: 700px;
+  font-size: 18px;
+  color:#fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.item-servico img{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+#planos{
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 80px;
+}
+#planos h2{
+  font-size: 32px;
+}
+.list-planos{
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.item-plano{
+  flex: 1;
+  border: 5px solid #122A57;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: 35px;
+  max-width: 240px;
+}
+.item-plano h3{
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+.item-plano h3::after{
+  content: "";
+  background-color:#122A57;
+  width: 80%;
+  height: 3px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.item-plano ul{
+  padding: 10px 30px;
+}
+.item-plano ul li{
+  list-style:square;
+  text-align:left;
+  margin-bottom: 10px;
+}
+.item-plano .btn{
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+footer{
+  background-color:#122A57;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+footer .footer{
+  justify-content: space-between;
+  color:#fff;
+}
+@media(max-width: 992px){
+  .flex-container{
+    flex-direction: column;
+  }
+  .apresentacao{
+    flex-direction: column-reverse;
+  }
+  #quem-somos{
+    flex-direction: column-reverse;
+  }
+  #quem-somos .texto-quem-somos{
+    margin: 10%
+  }
+  #quem-somos img {
+    min-width: 100%;
+  }
+  #servicos h2{
+    margin: 4%;
+  }
+  .list-servicos{
+    flex-direction: column;
+  }
+  .item-servico img{
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #planos h2{
+    margin: 4%;
+  }
+  .list-planos{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  .list-planos .item-plano{
+    max-width: 40%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  header .menu{
+    align-items: center;
+  }
+  .item-plano .btn{
+    width: 100%;
+  }
+}
+@media(max-width: 425px){
+  .list-planos .item-plano{
+    max-width: 70%;
+  }
+  .item-servico img{
+    width: 30%;
+  }
+}
